@@ -10,49 +10,87 @@
         android:id="@+id/btnbano"
         android:layout_width="194dp"
         android:layout_height="48dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="16dp"
         android:text="Baño"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.457" />
 
     <TextView
         android:id="@+id/txtselec"
-        android:layout_width="194dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="39dp"
-        android:text="TextView"
-        app:layout_constraintLeft_toLeftOf="@+id/btnbano"
+        android:layout_width="126dp"
+        android:layout_height="106dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:text="No hay baños seleccionados"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnbano"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="63dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="189dp"
+    <TextView
+        android:id="@+id/txtfecha"
+        android:layout_width="82dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="74dp"
+        android:layout_marginTop="73dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtselec"
+        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="63dp" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/txthora"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtfecha"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:id="@+id/btnfecha"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="22dp"
+        android:text="Fecha"
+        tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1"
+        android:layout_marginRight="22dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/txtfecha"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnbano"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/btnhora"
+        android:layout_width="97dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:text="hora"
+        app:layout_constraintLeft_toLeftOf="@+id/btnfecha"
+        app:layout_constraintTop_toBottomOf="@+id/btnfecha"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="224dp"
-        android:layout_marginTop="274dp"
-        android:layout_marginStart="224dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_editor_absoluteY="129dp"
+        android:layout_marginLeft="0dp" />
+
 </android.support.constraint.ConstraintLayout>
