@@ -13,6 +13,9 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
@@ -32,6 +35,7 @@ public class ejemplo extends AppCompatActivity {
             false, // Blue
             false, // Purple
             false, // Olive
+            false,
             false
 
     };
@@ -107,12 +111,13 @@ public class ejemplo extends AppCompatActivity {
             public void onClick(View view) {
                 // String array for alert dialog multi choice items
                 String[] colors = new String[]{
-                        "normal",
-                        "medicado",
-                        "basiado de glandulas",
-                        "desparacitacion",
-                        "peluqueria",
-                        "corte de uñas"
+                        "NORMAL",
+                        "MEDICADO",
+                        "VASIADO DE GLADULA",
+                        "DESPARACITACION",
+                        "PELUQUERIA",
+                        "CORTE DE UÑAS",
+                        "LIMPIEZA DE OIDOS"
                 };
 
 
@@ -176,5 +181,7 @@ public class ejemplo extends AppCompatActivity {
                 alert2.show();//se muestra el  dialogo
             }
         });
+       // FirebaseDatabase database = FirebaseDatabase.getInstance();
+        //DatabaseReference myRef = database.getReference();
     }
 }
