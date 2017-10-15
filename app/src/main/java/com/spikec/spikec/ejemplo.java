@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -22,6 +23,11 @@ import java.util.List;
 
 public class ejemplo extends AppCompatActivity {
     TextView txtfecha;
+    TextView tvfechacita;
+    TextView tvhoracita;
+    Button btnfechacita;
+    Button btnhoracita;
+    Button bottoncita;
     TextView txthora;
     Button btnfecha;
     Button btnhora;
@@ -131,7 +137,7 @@ public class ejemplo extends AppCompatActivity {
 
 
                 AlertDialog.Builder alert2= new AlertDialog.Builder(ejemplo.this);
-                alert2.setTitle("Dialogo con opciones");
+                alert2.setTitle("Tipos de baños");
 //                alert2.setMessage(" este cuadro tiene botones de acceso");
 
                 //agregando las opciones del chekbox
@@ -181,7 +187,35 @@ public class ejemplo extends AppCompatActivity {
                 alert2.show();//se muestra el  dialogo
             }
         });
-       // FirebaseDatabase database = FirebaseDatabase.getInstance();
-        //DatabaseReference myRef = database.getReference();
+        // a partir de aqui se crea u alertdialog para describir la cita
+
+        bottoncita = (Button)findViewById(R.id.btncita);
+        bottoncita.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            AlertDialog.Builder mBuilder = new AlertDialog.Builder(ejemplo.this);
+                View mView = getLayoutInflater().inflate(R.layout.dialog_cita, null);
+                final EditText mDescribe = (EditText) mView.findViewById(R.id.describecita);
+                Button mButton = (Button) mView.findViewById(R.id.btnokcita);
+                mButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(ejemplo.this, "Descripcion anexada",Toast.LENGTH_LONG).show();
+                    }
+
+                });
+                mBuilder.setView(mView);
+                AlertDialog dialog = mBuilder.create();
+                dialog.show();
+
+            }
+        });
+
+
+
+        // se establece la conexion con la base de datos en firebase
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        // se crea una variable de referencia
+        DatabaseReference myRef = database.getReference();
     }
 }
