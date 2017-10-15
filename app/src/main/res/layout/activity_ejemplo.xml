@@ -9,7 +9,7 @@
     <Button
         android:id="@+id/btnbano"
         android:layout_width="194dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginTop="64dp"
         android:text="Baño"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -17,19 +17,42 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_editor_absoluteY="67dp"
-        tools:layout_editor_absoluteX="42dp" />
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/txtselec"
         android:layout_width="194dp"
         android:layout_height="33dp"
-        android:layout_marginLeft="0dp"
         android:layout_marginTop="39dp"
         android:text="TextView"
         app:layout_constraintLeft_toLeftOf="@+id/btnbano"
         app:layout_constraintTop_toBottomOf="@+id/btnbano"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="189dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="63dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginStart="224dp" />
 </android.support.constraint.ConstraintLayout>
