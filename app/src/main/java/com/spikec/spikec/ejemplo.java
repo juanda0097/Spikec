@@ -126,11 +126,6 @@ public class ejemplo extends AppCompatActivity {
                         "LIMPIEZA DE OIDOS"
                 };
 
-
-
-
-
-
                 // Convert the color array to list
                 final List<String> colorsList = Arrays.asList(colors);
 
@@ -162,7 +157,7 @@ public class ejemplo extends AppCompatActivity {
                 alert2.setPositiveButton("ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        tv.setText("tus Baños son:  \n");
+                        tv.setText("Tus Baños son:  \n");
 
 
 
@@ -195,6 +190,7 @@ public class ejemplo extends AppCompatActivity {
             public void onClick(View view) {
             AlertDialog.Builder mBuilder = new AlertDialog.Builder(ejemplo.this);
                 View mView = getLayoutInflater().inflate(R.layout.dialog_cita, null);
+
                 final EditText mDescribe = (EditText) mView.findViewById(R.id.describecita);
                 Button mButton = (Button) mView.findViewById(R.id.btnokcita);
                 mButton.setOnClickListener(new View.OnClickListener() {
