@@ -17,8 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        app:layout_constraintHorizontal_bias="0.457" />
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/txtselec"

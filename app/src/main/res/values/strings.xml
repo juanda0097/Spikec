@@ -22,4 +22,5 @@
     <string name="password">Contraseña</string>
     <string name="register">Registro</string>
     <string name="login">Iniciar</string>
+    <string name="login_register">Login</string>
 </resources>

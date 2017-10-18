@@ -1,5 +1,6 @@
 package com.spikec.spikec;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +17,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class login extends AppCompatActivity implements View.OnClickListener {
 Button bottonregister, bottoninicio_sesion;
+
     EditText editexttcorreo, editexttcontrasena;
     FirebaseAuth.AuthStateListener mAuthListener;
     @Override
@@ -38,8 +40,11 @@ Button bottonregister, bottoninicio_sesion;
                 if (user != null){
                     Log.i("SESION", "Sesion iniciada "+ user.getEmail());
                     //si eso es valido poner iniciar una actividad
+
                 }else{
                     Log.i("SESION", "sesion cerrada");
+
+
                 }
 
         }
@@ -63,6 +68,8 @@ Button bottonregister, bottoninicio_sesion;
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     Log.i("SESION", "Sesion Iniciada");
+
+
                 }else {
                     Log.i("SESION", task.getException().getMessage()+"");
                 }
