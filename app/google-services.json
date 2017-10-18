@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "727427083938-9es76eggp6jncbhjsak9b0o4u775u53l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spikec.spikec",
+            "certificate_hash": "86da208c2a54d5fc67da565419dc45857d2e83e6"
+          }
+        },
+        {
           "client_id": "727427083938-ris08pc2phlo1vqvr61i43a98001258b.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727427083938-ris08pc2phlo1vqvr61i43a98001258b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

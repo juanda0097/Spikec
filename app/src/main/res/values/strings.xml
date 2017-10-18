@@ -16,4 +16,10 @@
     <string name="descripcion_de_cita">Descripcion de cita</string>
     <string name="describe">Describe</string>
     <string name="ok">ok</string>
+    <string name="descripcion_de_la_cita">Descripcion de la cita</string>
+    <string name="hora_y_fecha">Hora y fecha</string>
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="register">Registro</string>
+    <string name="login">Iniciar</string>
 </resources>

@@ -22,8 +22,8 @@
 
     <TextView
         android:id="@+id/txtselec"
-        android:layout_width="126dp"
-        android:layout_height="106dp"
+        android:layout_width="128dp"
+        android:layout_height="105dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="9dp"
@@ -114,24 +114,55 @@
         app:layout_constraintLeft_toLeftOf="parent"
         tools:layout_constraintLeft_creator="1" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="TextView"
-        app:layout_constraintRight_toLeftOf="@+id/btnenviar"
+    <EditText
+        android:id="@+id/descripcioncita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/descripcion_de_la_cita"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="6dp"
-        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="28dp"
         app:layout_constraintTop_toBottomOf="@+id/btncita"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="33dp"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.094" />
+
+    <Button
+        android:id="@+id/btnenviarcita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="51dp"
+        app:layout_constraintTop_toBottomOf="@+id/btncita"
+        android:layout_marginRight="4dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.91" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/hora_y_fecha"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/descripcioncita"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="6dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.05" />
 
 </android.support.constraint.ConstraintLayout>

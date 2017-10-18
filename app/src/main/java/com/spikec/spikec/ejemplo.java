@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -23,11 +22,13 @@ import java.util.List;
 
 public class ejemplo extends AppCompatActivity {
     TextView txtfecha;
+    /*
     TextView tvfechacita;
     TextView tvhoracita;
     Button btnfechacita;
     Button btnhoracita;
     Button bottoncita;
+    */
     TextView txthora;
     Button btnfecha;
     Button btnhora;
@@ -183,7 +184,7 @@ public class ejemplo extends AppCompatActivity {
             }
         });
         // a partir de aqui se crea u alertdialog para describir la cita
-
+/*
         bottoncita = (Button)findViewById(R.id.btncita);
         bottoncita.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -206,12 +207,18 @@ public class ejemplo extends AppCompatActivity {
 
             }
         });
-
+*/
 
 
         // se establece la conexion con la base de datos en firebase
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+       // FirebaseDatabase database = FirebaseDatabase.getInstance();
         // se crea una variable de referencia
-        DatabaseReference myRef = database.getReference();
+       // DatabaseReference myRef = database.getReference();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("message");
+
+       myRef.setValue("Hello, World!");
+
+
     }
 }
