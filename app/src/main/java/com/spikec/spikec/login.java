@@ -1,5 +1,6 @@
 package com.spikec.spikec;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -39,6 +40,13 @@ Button bottonregister, bottoninicio_sesion;
                 if (user != null){
                     Log.i("SESION", "Sesion iniciada "+ user.getEmail());
                     //si eso es valido poner iniciar una actividad
+                    bottoninicio_sesion.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent intentinicio = new Intent(login.this, MainActivity.class);
+                            startActivity(intentinicio);
+                        }
+                    });
 
                 }else{
                     Log.i("SESION", "sesion cerrada");

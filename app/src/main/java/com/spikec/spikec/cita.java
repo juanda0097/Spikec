@@ -15,6 +15,7 @@ public class cita extends AppCompatActivity {
     Button btnfechacita;
     Button btnhoracita;
     Button bottoncita;
+    Button enviar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,5 +42,14 @@ public class cita extends AppCompatActivity {
 
             }
         });
+        /*
+        enviar = (Button)findViewById(R.id.btnenviarcita);
+        enviar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentenviar = new Intent(cita.this, login.class);
+                startActivity(intentenviar);
+            }
+        });*/
     }
 }
