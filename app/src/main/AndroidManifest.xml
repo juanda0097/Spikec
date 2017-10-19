@@ -11,12 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"/>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".ejemplo" />
-        <activity android:name=".login" />
-        <activity android:name=".register" />
-        <activity android:name=".SplashScreen"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".ejemplo" />
+        <activity android:name=".login" />
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".cita" />
+        <activity android:name=".Menu_miportal"></activity>
     </application>
 
 </manifest>

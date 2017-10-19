@@ -28,7 +28,7 @@ Button portal;
         portal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent portal = new Intent(MainActivity.this, ejemplo.class);
+                Intent portal = new Intent(MainActivity.this, Menu_miportal.class);
                 startActivity(portal);
             }
         });
@@ -96,6 +96,7 @@ Button portal;
             // Handle the camera action
 
         } else if (id == R.id.nav_gallery) {
+
 
         } else if (id == R.id.nav_slideshow) {
 
