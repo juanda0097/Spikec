@@ -10,24 +10,25 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/rl"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
         android:padding="10dp"
         tools:context=".MainActivity"
 
-        >
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
         <Button
             android:id="@+id/btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Colors you most like?"
+            android:text="@string/colors_you_most_like"
             />
         <TextView
             android:id="@+id/tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/btn"
-            android:textSize="20dp"
+            android:textSize="20sp"
             />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

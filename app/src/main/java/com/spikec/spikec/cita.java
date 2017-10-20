@@ -31,10 +31,10 @@ public class cita extends AppCompatActivity {
                 String fechayhora = fechahora.getText().toString();
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 DatabaseReference myRef = database.getReference("Cita");
-                myRef.setValue("Motivo: "+ descripcion);
+                myRef.push().setValue("Motivo: "+ descripcion);
                  DatabaseReference Reffechahora = database.getReference("Fecha");
 
-                 Reffechahora.setValue(fechayhora);
+                 Reffechahora.push().setValue(fechayhora);
 
 
             }

@@ -96,7 +96,8 @@ Button portal;
             // Handle the camera action
 
         } else if (id == R.id.nav_gallery) {
-
+            Intent vistaveterinario = new Intent(MainActivity.this, ViewCites.class);
+            startActivity(vistaveterinario);
 
         } else if (id == R.id.nav_slideshow) {
 

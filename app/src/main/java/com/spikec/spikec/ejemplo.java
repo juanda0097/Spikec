@@ -202,7 +202,7 @@ public class ejemplo extends AppCompatActivity {
                 DatabaseReference myReffecha = database.getReference("fhbaño");
 
                 myref.push().setValue(seleccionado);
-                myReffecha.push().setValue(fecha +": "+hora);
+                myReffecha.push().setValue(fecha+ "-"+ hora);
             }
         });
         // a partir de aqui se crea u alertdialog para describir la cita

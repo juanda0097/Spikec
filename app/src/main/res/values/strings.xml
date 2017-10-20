@@ -25,4 +25,6 @@
     <string name="login_register">Login</string>
     <string name="spike">spike</string>
     <string name="logotipoinicio">logotipoinicio</string>
+    <string name="citas_pedidas">citas pedidas</string>
+    <string name="colors_you_most_like">Colors you most like?</string>
 </resources>
