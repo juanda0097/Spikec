@@ -25,7 +25,6 @@ public class ejemplo extends AppCompatActivity {
    // DatabaseReference myRef = database.getReference("Banos");
 
 
-
     TextView txtfecha;
     /*
     TextView tvfechacita;
@@ -190,6 +189,7 @@ public class ejemplo extends AppCompatActivity {
                 alert2.show();//se muestra el  dialogo
             }
         });
+
         Button send = (Button)findViewById(R.id.btnenviar);
         send.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -201,8 +201,8 @@ public class ejemplo extends AppCompatActivity {
                 DatabaseReference myref = database.getReference("Baños");
                 DatabaseReference myReffecha = database.getReference("fhbaño");
 
-                myref.setValue(seleccionado);
-                myReffecha.setValue(fecha +":"+hora);
+                myref.push().setValue(seleccionado);
+                myReffecha.push().setValue(fecha +": "+hora);
             }
         });
         // a partir de aqui se crea u alertdialog para describir la cita
