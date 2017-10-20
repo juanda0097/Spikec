@@ -13,6 +13,9 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
@@ -185,6 +188,21 @@ public class ejemplo extends AppCompatActivity {
                     }
                 });
                 alert2.show();//se muestra el  dialogo
+            }
+        });
+        Button send = (Button)findViewById(R.id.btnenviar);
+        send.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String seleccionado = tv.getText().toString();
+                String fecha = txtfecha.getText().toString();
+                String hora = txthora.getText().toString();
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference myref = database.getReference("Baños");
+                DatabaseReference myReffecha = database.getReference("fhbaño");
+
+                myref.setValue(seleccionado);
+                myReffecha.setValue(fecha +":"+hora);
             }
         });
         // a partir de aqui se crea u alertdialog para describir la cita
