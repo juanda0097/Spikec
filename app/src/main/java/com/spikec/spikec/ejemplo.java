@@ -18,6 +18,11 @@ import java.util.Calendar;
 import java.util.List;
 
 public class ejemplo extends AppCompatActivity {
+    //FirebaseDatabase database = FirebaseDatabase.getInstance();
+   // DatabaseReference myRef = database.getReference("Banos");
+
+
+
     TextView txtfecha;
     /*
     TextView tvfechacita;
@@ -30,6 +35,8 @@ public class ejemplo extends AppCompatActivity {
     Button btnfecha;
     Button btnhora;
     Button bano;
+
+
     TextView tv;
     //variables globales
     private int year,mes,dia,horas,minutos;
@@ -211,11 +218,9 @@ public class ejemplo extends AppCompatActivity {
        // FirebaseDatabase database = FirebaseDatabase.getInstance();
         // se crea una variable de referencia
        // DatabaseReference myRef = database.getReference();
-       /* FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
 
-       myRef.setValue("Hello, World!");
-*/
 
     }
+
+
 }
