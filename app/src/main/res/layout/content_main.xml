@@ -11,73 +11,152 @@
 
     <Button
         android:id="@+id/btnbano"
-        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@drawable/boton_redondo"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="104dp"
         android:text="@string/miportal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        android:drawableRight="@drawable/ic_menu_send"/>
 
     <TextView
         android:id="@+id/tvveterinariastitle"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="111dp"
+        android:layout_width="236dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="25dp"
         android:text="@string/veterinarias"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/btnbano"
+        app:layout_constraintRight_toRightOf="@+id/btnbano"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1"
-        android:textSize="22sp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.0" />
+        />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnanimalvet"
+        android:background="@drawable/boton_redondo2"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="-2dp"
         android:text="@string/animalvet"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnbano"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        android:drawableRight="@drawable/ic_menu_send"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnveterinariaoasis"
+        android:background="@drawable/boton_redondo"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-5dp"
+        android:layout_marginTop="0dp"
         android:text="@string/veterinaria_oasis"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/btnanimalvet"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintRight_creator="1" />
+        tools:layout_constraintRight_creator="1"
+        android:drawableRight="@drawable/ic_menu_send"/>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnmimaskota"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="29dp"
         android:layout_marginTop="0dp"
+        android:background="@drawable/boton_redondo2"
+        android:drawableRight="@drawable/ic_menu_send"
         android:text="@string/veterinaria_mi_maskota"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/btnveterinariaoasis"
         tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/btnmispotrillos"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="296dp"
+        android:background="@drawable/boton_redondo"
+        android:text="@string/agroveterinaria_mis_potrillos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1"
-        app:layout_constraintHorizontal_bias="0.39" />
+        android:drawableRight="@drawable/ic_menu_send"/>
+
+    <Button
+        android:id="@+id/btnmaceo"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/boton_redondo2"
+        android:drawableRight="@drawable/ic_menu_send"
+        android:text="@string/maceo"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmispotrillos"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/btnanimalhouse"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="392dp"
+        android:background="@drawable/boton_redondo"
+        android:text="@string/animal_house"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:drawableRight="@drawable/ic_menu_send"/>
+
+    <Button
+        android:id="@+id/btnhojarasca"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/boton_redondo2"
+        android:drawableRight="@drawable/ic_menu_send"
+        android:text="@string/agroveterinaria_la_hojarasca"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnanimalhouse"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
 </android.support.constraint.ConstraintLayout>

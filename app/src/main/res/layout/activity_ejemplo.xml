@@ -11,6 +11,7 @@
         android:layout_width="194dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/boton_redondo"
         android:text="@string/baño"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -27,6 +28,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="-60dp"
         android:text="@string/selectbano"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnbano"
         tools:layout_constraintLeft_creator="1"
@@ -43,7 +45,8 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        />
 
     <TextView
         android:id="@+id/txthora"
@@ -64,6 +67,7 @@
         android:layout_height="48dp"
         android:layout_marginEnd="22dp"
         android:text="@string/date"
+        android:background="@drawable/boton_redondo"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1"
         android:layout_marginRight="22dp"
@@ -82,6 +86,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="6dp"
         android:text="@string/hour"
+        android:background="@drawable/boton_redondo"
         app:layout_constraintLeft_toLeftOf="@+id/btnfecha"
         app:layout_constraintTop_toBottomOf="@+id/btnfecha"
         tools:layout_constraintLeft_creator="1"
@@ -92,6 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/send"
+        android:background="@drawable/boton_redondo2"
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"

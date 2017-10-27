@@ -17,13 +17,71 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-Button portal;
+Button portal,animalvet,veterinariaoasis,veterinariamimaskota,agroveterinariamispotrillos,maceo,animalhouse,agroveterinariahojarasca;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        animalvet = (Button)findViewById(R.id.btnanimalvet);
+        animalvet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent animalvet = new Intent(MainActivity.this, Menu_miportal.class);
+                startActivity(animalvet);
+            }
+        });
+        veterinariaoasis = (Button)findViewById(R.id.btnveterinariaoasis);
+        veterinariaoasis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent veterinariaoasis = new Intent(MainActivity.this, Menu_miportal.class);
+                startActivity(veterinariaoasis);
+            }
+        });
+        veterinariamimaskota = (Button)findViewById(R.id.btnmimaskota);
+        veterinariamimaskota.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mimaskota = new Intent(MainActivity.this, Menu_miportal.class);
+                startActivity(mimaskota);
+            }
+        });
+        agroveterinariamispotrillos = (Button)findViewById(R.id.btnmispotrillos);
+        agroveterinariamispotrillos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mispotrillos = new Intent(MainActivity.this, Menu_miportal.class);
+                startActivity(mispotrillos);
+            }
+        });
+        maceo= (Button)findViewById(R.id.btnmaceo);
+        maceo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent maceo = new Intent(MainActivity.this, Menu_miportal.class);
+                startActivity(maceo);
+            }
+        });
+        animalhouse = (Button)findViewById(R.id.btnanimalhouse);
+        animalhouse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent animalhouse = new Intent(MainActivity.this, Menu_miportal.class);
+                startActivity(animalhouse);
+            }
+        });
+        agroveterinariahojarasca = (Button)findViewById(R.id.btnhojarasca);
+        agroveterinariahojarasca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent hojarasca = new Intent(MainActivity.this, Menu_miportal.class);
+                startActivity(hojarasca);
+            }
+        });
+
+
         portal = (Button)findViewById(R.id.btnbano);
         portal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,5 +170,8 @@ Button portal;
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+
+
+
     }
 }

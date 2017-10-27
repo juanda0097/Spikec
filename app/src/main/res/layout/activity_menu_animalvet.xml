@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.spikec.spikec.Menu_miportal">
+    tools:context="com.spikec.spikec.Menu_animalvet">
+
 
     <Button
-        android:id="@+id/btnportalbano"
+        android:id="@+id/btnanimalvetbano"
         android:background="@drawable/boton_redondo"
         android:layout_width="188dp"
         android:layout_height="58dp"
@@ -21,7 +22,7 @@
         android:layout_marginTop="75dp" />
 
     <Button
-        android:id="@+id/btnportalcita"
+        android:id="@+id/btnanimalvetcita"
         android:layout_width="185dp"
         android:background="@drawable/boton_redondo2"
         android:layout_height="53dp"
@@ -30,7 +31,7 @@
         tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="47dp"
-        app:layout_constraintTop_toBottomOf="@+id/btnportalbano"
+        app:layout_constraintTop_toBottomOf="@+id/btnanimalvetbano"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.502" />

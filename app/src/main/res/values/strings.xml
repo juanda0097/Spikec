@@ -23,11 +23,15 @@
     <string name="register">Registro</string>
     <string name="login">Iniciar</string>
     <string name="login_register">Login</string>
-    <string name="spike">spike</string>
+    <string name="spike">Spike</string>
     <string name="logotipoinicio">logotipoinicio</string>
     <string name="citas_pedidas">citas pedidas</string>
     <string name="colors_you_most_like">Colors you most like?</string>
     <string name="animalvet">Animalvet</string>
     <string name="veterinaria_oasis">Veterinaria oasis</string>
     <string name="veterinaria_mi_maskota">Veterinaria mi maskota</string>
+    <string name="agroveterinaria_mis_potrillos">Agroveterinaria Mis Potrillos</string>
+    <string name="maceo">Maceo</string>
+    <string name="animal_house">Animal House</string>
+    <string name="agroveterinaria_la_hojarasca">Agroveterinaria La Hojarasca</string>
 </resources>
