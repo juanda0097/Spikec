@@ -27,4 +27,7 @@
     <string name="logotipoinicio">logotipoinicio</string>
     <string name="citas_pedidas">citas pedidas</string>
     <string name="colors_you_most_like">Colors you most like?</string>
+    <string name="animalvet">Animalvet</string>
+    <string name="veterinaria_oasis">Veterinaria oasis</string>
+    <string name="veterinaria_mi_maskota">Veterinaria mi maskota</string>
 </resources>

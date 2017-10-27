@@ -1,6 +1,7 @@
 package com.spikec.spikec;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -24,6 +25,7 @@ Button bottonregister, bottoninicio_sesion;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         bottoninicio_sesion = (Button) findViewById(R.id.btnlogin);
         bottonregister = (Button) findViewById(R.id.btnregister);
         editexttcorreo = (EditText) findViewById(R.id.etcorreo);
