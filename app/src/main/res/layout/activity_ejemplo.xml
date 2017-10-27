@@ -24,9 +24,9 @@
         android:id="@+id/txtselec"
         android:layout_width="128dp"
         android:layout_height="105dp"
-        android:layout_marginLeft="101dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="-60dp"
+        android:layout_marginTop="0dp"
         android:text="@string/selectbano"
 
         app:layout_constraintLeft_toLeftOf="parent"
